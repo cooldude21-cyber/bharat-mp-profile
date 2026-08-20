@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hon'ble Member of Parliament | Official Public Portal</title>
+    <title>All India Sitting MPs | National Public Portal</title>
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -66,6 +66,28 @@
             font-size: 1rem;
         }
 
+        .search-box {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .search-box input {
+            width: 100%;
+            max-width: 500px;
+            padding: 12px 20px;
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid var(--glass-border);
+            border-radius: 30px;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            backdrop-filter: blur(10px);
+        }
+
+        .search-box input::placeholder {
+            color: #94a3b8;
+        }
+
         .profile-section {
             display: flex;
             flex-direction: column;
@@ -90,14 +112,14 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 3rem;
+            font-size: 2.5rem;
             color: var(--accent-color);
             flex-shrink: 0;
             box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
         }
 
         .bio-info h2 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
             margin-bottom: 5px;
         }
 
@@ -116,6 +138,8 @@
             border-radius: 20px;
             font-size: 0.85rem;
             border: 1px solid rgba(56, 189, 248, 0.3);
+            margin-bottom: 8px;
+            margin-right: 5px;
         }
 
         .section-title {
@@ -166,46 +190,52 @@
     <div class="container">
         <!-- Header -->
         <header class="glass-card">
-            <h1>Official Public Portal</h1>
-            <p>Constituency Development & Public Transparency Initiative</p>
+            <h1>All India Sitting MP Directory</h1>
+            <p>National Public Representative & Constituency Transparency Portal</p>
         </header>
 
-        <!-- Profile Section -->
+        <!-- Search Bar Section -->
+        <div class="search-box">
+            <input type="text" placeholder="Search by MP Name, State, or Constituency...">
+        </div>
+
+        <!-- Profile Section (Default Featured MP) -->
         <section class="glass-card profile-section">
             <div class="avatar-box">MP</div>
             <div class="bio-info">
                 <h2>Hon'ble Member of Parliament</h2>
-                <span class="badge">Sitting MP (Lok Sabha / Rajya Sabha)</span>
-                <p style="margin-top: 10px;">Dedicated to public welfare, rural infrastructure development, digital empowerment, and transparent governance across the constituency.</p>
+                <span class="badge">Lok Sabha / Rajya Sabha</span>
+                <span class="badge" style="background: rgba(129, 140, 248, 0.15); color: #818cf8; border-color: rgba(129, 140, 248, 0.3);">All India Jurisdiction</span>
+                <p style="margin-top: 10px;">Providing transparent access to constituency development metrics, central welfare fund allocations, public grievance tracking, and legislative updates across India.</p>
             </div>
         </section>
 
         <!-- Works & Gov Rules Section -->
         <div class="grid-2">
             <div class="glass-card">
-                <h3 class="section-title">Key Focus Areas & Works</h3>
+                <h3 class="section-title">National Legislative Focus</h3>
                 <ul>
-                    <li>✔ Rural Road Connectivity & Infrastructure</li>
-                    <li>✔ Healthcare & Sub-Center Upgradation</li>
-                    <li>✔ Educational Digitalization & Schools</li>
-                    <li>✔ Clean Drinking Water Schemes (Jal Jeevan)</li>
+                    <li>✔ Central Government Schemes Implementation</li>
+                    <li>✔ Infrastructure & Regional Development</li>
+                    <li>✔ Parliamentary Debates & Questions</li>
+                    <li>✔ Public Welfare & Grievance Redressal</li>
                 </ul>
             </div>
 
             <div class="glass-card">
-                <h3 class="section-title">Public Grievance & Office</h3>
+                <h3 class="section-title">Digital Transparency & Rules</h3>
                 <ul>
-                    <li><strong>Office Address:</strong> MP Constituency Office, Main Road</li>
-                    <li><strong>Working Hours:</strong> Mon - Fri (10:00 AM - 4:00 PM)</li>
-                    <li><strong>Transparency Compliance:</strong> As per Government Digital Guidelines</li>
+                    <li><strong>Compliance:</strong> National Digital Governance Guidelines</li>
+                    <li><strong>Portal Type:</strong> Open Public Information Resource</li>
+                    <li><strong>Status:</strong> Active Term (2024 - Present)</li>
                 </ul>
             </div>
         </div>
 
         <!-- Footer -->
         <footer>
-            <p>&copy; 2026 Public Representative Portal. Designed with Liquid Glass UI.</p>
-            <p style="margin-top: 5px;">Disclaimer: This is an informational public profile portal built for transparency.</p>
+            <p>&copy; 2026 All India MP Public Portal. Designed with Liquid Glass UI.</p>
+            <p style="margin-top: 5px;">Disclaimer: Informational repository built for citizen awareness and digital governance.</p>
         </footer>
     </div>
 
